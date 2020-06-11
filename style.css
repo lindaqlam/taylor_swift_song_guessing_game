@@ -1,0 +1,92 @@
+body {
+	background-color: #fff;
+	margin: 0;
+	font-family: "Montserrat", "Avenir";
+}
+
+.square {
+	width: 30%;
+  max-height: 10px;
+	background: white;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66%;
+	/* overflow: hidden; */
+
+	/* white-space: nowrap; */
+	border-radius: 15%;
+	transition: background 0.6s;
+	-webkit-transition: background 0.6s;
+	-moz-transition: background 0.6s;
+
+	display: table-cell;
+	vertical-align: center;
+}
+
+.song-choice {
+    color: black;
+    text-align: center;
+    padding: 35% 5%;
+}
+
+#container {
+	margin: 20px auto;
+	max-width: 600px;
+}
+
+.header {
+	background: #82c4c3;
+	color: white;
+}
+
+h1 {
+	text-align: center;
+	line-height: 1.1;
+	font-weight: normal;
+	font-size: 3em;
+	margin: 0;
+	text-transform: uppercase;
+	padding: 20px 0 0 0;
+}
+
+.row {
+	padding: 1px 0 2px 0;
+	text-align: center;
+}
+
+#message {
+	display: inline-block;
+	width: 20%;
+}
+
+#stripe {
+	background: #e4e4e4;
+	height: 20px;
+	text-align: center;
+	color: black;
+}
+
+.selected {
+	color: white;
+	background: #82c4c3;
+}
+
+button {
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	color: #82c4c3;
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	outline: none;
+}
+
+button:hover {
+	color: white;
+	background: #82c4c3;
+}
