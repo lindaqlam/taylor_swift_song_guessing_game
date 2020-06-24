@@ -6,7 +6,7 @@ body {
 
 .square {
 	width: 30%;
-  max-height: 10px;
+	max-height: 10px;
 	background: white;
 	padding-bottom: 30%;
 	float: left;
@@ -24,9 +24,9 @@ body {
 }
 
 .song-choice {
-    color: black;
-    text-align: center;
-    padding: 35% 5%;
+	color: black;
+	text-align: center;
+	padding: 35% 5%;
 }
 
 #container {
