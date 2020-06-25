@@ -17,14 +17,14 @@
 		<h2>BASED ON THIS LYRIC:</h2>
 		<h3>"<span id="lyricDisplay">lyric</span>"</h3>
 	</div>
+
+	<div class="row">
+		<span id="message"></span>
+	</div>
 </div>
 
 <div id="stripe">
 	<button id="reset">New Colors</button>
-	<span id="message"></span>
-	<button class="mode">Easy</button>
-	<button class="mode selected">Hard</button>
-
 	
 	<form>
 		<select name='albumSelector' id='albumSelector' onchange='changeAlbumMode()'>
@@ -39,6 +39,9 @@
 		  <option value="misc">Misc</option>
 		</select>
 	</form>
+
+	<button class="mode">Easy</button>
+	<button class="mode selected">Hard</button>
 </div>
 
 	<div id="container">
