@@ -104,6 +104,7 @@ button {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	outline: none;
+	padding: 0;
 }
 
 button:hover {
