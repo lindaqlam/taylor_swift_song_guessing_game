@@ -35,11 +35,6 @@ body {
 		flex-wrap: wrap;
 	}
 
-	.button {
-		margin-left: 0px;
-		margin-right: 0px;
-	}
-
 	.square {
 		width: 40%;
 		max-height: 40px;
@@ -86,6 +81,8 @@ h1 {
 	height: 20px;
 	text-align: center;
 	color: black;
+	overflow: hidden;
+	white-space: nowrap;
 }
 
 .selected {
