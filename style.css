@@ -25,15 +25,24 @@ body {
 	padding: 35% 5%;
 }
 
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
+	#container {
+		display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+		display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+		display: -ms-flexbox; /* TWEENER - IE 10 */
+		display: -webkit-flex; /* NEW - Chrome */
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
 	.square {
-		display: none;
-		width: 45%;
-		max-height: 80px;
+		width: 40%;
+		max-height: 60px;
 	}
 
 	.song-choice {
-		font-size: 1.5em;
+		font-size: 1.2em;
 	}
 }
 
@@ -56,6 +65,11 @@ h1 {
 	text-transform: uppercase;
 	padding: 20px 0 0 0;
 }
+
+/* h3 span {
+	background-color: white;
+	color: #82c4c3;
+} */
 
 .row {
 	padding: 1px 0 2px 0;
