@@ -5,53 +5,62 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/solid.min.css">
 </head>
 
 <body>
 
-<div class="header">
-	<h1>
-		<span id="gameTitle">Guess That Taylor Swift Song</span>
-	</h1>
-	<div class="row">
-		<h2>BASED ON THIS LYRIC:</h2>
-		<h3>"<span id="lyricDisplay">lyric</span>"</h3>
-	</div>
-
-	<div class="row">
-		<span id="message"></span>
-	</div>
-</div>
-
-<div id="stripe">
-	<button id="reset">New Colors</button>
+<div class="content">
+	<div class="header">
+		<h1>
+			<span id="gameTitle">Guess That Taylor Swift Song</span>
+		</h1>
+		<div class="row">
+			<h2>BASED ON THIS LYRIC:</h2>
+			<h3>"<span id="lyricDisplay">lyric</span>"</h3>
+		</div>
 	
-	<form>
-		<select name='albumSelector' id='albumSelector' onchange='changeAlbumMode()'>
-		  <option value="all-albums">All Albums</option>
-		  <option value="taylor-swift">Taylor Swift</option>
-		  <option value="fearless">Fearless</option>
-		  <option value="speak-now">Speak Now</option>
-		  <option value="red">Red</option>
-		  <option value="1989">1989</option>
-		  <option value="reputation">Reputation</option>
-		  <option value="lover">Lover</option>
-		  <option value="misc">Misc</option>
-		</select>
-	</form>
-
-	<button class="mode easy">Easy</button>
-	<button class="mode hard selected">Hard</button>
+		<div class="row">
+			<span id="message"></span>
+		</div>
+	</div>
+	
+	<div id="stripe">
+		<button id="reset">New Colors</button>
+		
+		<form>
+			<select name='albumSelector' id='albumSelector' onchange='changeAlbumMode()'>
+			  <option value="all-albums">All Albums</option>
+			  <option value="taylor-swift">Taylor Swift</option>
+			  <option value="fearless">Fearless</option>
+			  <option value="speak-now">Speak Now</option>
+			  <option value="red">Red</option>
+			  <option value="1989">1989</option>
+			  <option value="reputation">Reputation</option>
+			  <option value="lover">Lover</option>
+			  <option value="misc">Misc</option>
+			</select>
+		</form>
+	
+		<button class="mode easy">Easy</button>
+		<button class="mode hard selected">Hard</button>
+	</div>
+	
+		<div id="container">
+			<div class="square"><div class="song-choice">song</div></div>
+			<div class="square"><div class="song-choice">song</div></div>
+			<div class="square"><div class="song-choice">song</div></div>
+			<div class="square"><div class="song-choice">song</div></div>
+			<div class="square"><div class="song-choice">song</div></div>
+			<div class="square"><div class="song-choice">song</div></div>
+		</div>
 </div>
 
-	<div id="container">
-		<div class="square"><div class="song-choice">song</div></div>
-		<div class="square"><div class="song-choice">song</div></div>
-		<div class="square"><div class="song-choice">song</div></div>
-		<div class="square"><div class="song-choice">song</div></div>
-		<div class="square"><div class="song-choice">song</div></div>
-		<div class="square"><div class="song-choice">song</div></div>
-	</div>
+<footer class="footer">
+    <i class="fas fa-laptop-code"></i> Made by <a href="http://lindaqlam.com">Linda</a>
+</footer>
+
 
 
 	<script type="text/javascript" src="songs.js"></script>
